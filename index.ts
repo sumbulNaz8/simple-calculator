@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
 console.log(`\n\t-----------------
                                     WELCOME TO MY SIMPLE CALCULATOR
@@ -26,3 +26,4 @@ if(answer. operator === "Addition"){
 }else{
     console.log("Please select valid operator")
 }
+//********************************************** THE END ***************************************************/gi

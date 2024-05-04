@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
 console.log(`\n\t-----------------
                                     WELCOME TO MY SIMPLE CALCULATOR
@@ -28,3 +28,4 @@ else if (answer.operator === "Division") {
 else {
     console.log("Please select valid operator");
 }
+//********************************************** THE END ***************************************************/gi
