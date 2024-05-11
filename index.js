@@ -6,9 +6,9 @@ console.log(chalk.green.italic `\n\t-----------------
                                                                         -----------------------------------\n`);
 do {
     let answer = await inquirer.prompt([
-        { message: "Enter your first number", type: "number", name: "firstNumber" },
-        { message: "Enter your second number", type: "number", name: "secondNumber" },
-        { message: "Select one of the operators to perform action",
+        { message: (chalk.bold.yellow("Enter your first number")), type: "number", name: "firstNumber" },
+        { message: (chalk.bold.yellow("Enter your second number")), type: "number", name: "secondNumber" },
+        { message: (chalk.bold.greenBright("Select one of the operators to perform action")),
             type: "list",
             name: "operator",
             choices: ["Addition", "Subtraction", "Multiplication", "Division", "Modules", "Exponents"],
@@ -40,7 +40,7 @@ do {
         {
             name: 'continue',
             type: 'confirm',
-            message: 'Do you want to perform another operation?',
+            message: (chalk.bold.blue('Do you want to perform another operation?')),
             default: true
         }
     ]);
@@ -49,4 +49,3 @@ do {
         break;
     }
 } while (true);
-console.log("***********************************THE END****************************************************");

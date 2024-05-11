@@ -9,9 +9,9 @@ console.log(chalk.green.italic`\n\t-----------------
                                                                      
 do{
 let answer = await inquirer.prompt([
-  { message: "Enter your first number", type: "number", name: "firstNumber" },
-  { message: "Enter your second number", type: "number", name: "secondNumber" },
-  { message: "Select one of the operators to perform action",
+  { message: (chalk.bold.yellow("Enter your first number")), type: "number", name: "firstNumber" },
+  { message: (chalk.bold.yellow("Enter your second number")), type: "number", name: "secondNumber" },
+  { message: (chalk.bold.greenBright("Select one of the operators to perform action")),
     type: "list",
     name: "operator",
     choices: ["Addition", "Subtraction", "Multiplication", "Division" ,  "Modules" , "Exponents"],
@@ -35,11 +35,11 @@ if(answer. operator === "Addition"){
   console.log(chalk.gray("please select valid operator"));
 }
 
-let ans =await inquirer . prompt([
+let ans = await inquirer . prompt([
   {
     name: 'continue',
     type: 'confirm',
-    message: 'Do you want to perform another operation?',
+    message: (chalk.bold.blue('Do you want to perform another operation?')),
     default:true
       
   }
@@ -53,11 +53,16 @@ if (ans.continue === false ){
 
 
 
-console.log("***********************************THE END****************************************************")
+
 
 
 
 
 
       
-       
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/sumbulNaz8/Assignment-45.git
+  git push -u origin maingit
